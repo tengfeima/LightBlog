@@ -1,0 +1,12 @@
+<li data-id="<%= delistitem._id %>">
+	<div class="del">删除</div>
+    <% if ( delistitem.title != "" && delistitem.title != "请输入标题") { %>
+        <div class="title"><%= delistitem.title %></div>
+    <% } %>
+    <% if ( delistitem.img != "") { %>
+        <img class="pic" src="<%= delistitem.img %>">
+    <% } %>
+    <% if ( delistitem.content != "" && delistitem.content != "请输入内容") { %>
+        <div class="content"><%= delistitem.content %></div>
+    <% } %>
+</li>

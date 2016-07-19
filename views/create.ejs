@@ -1,0 +1,18 @@
+<div class="head">
+    <p>John Ma</p>
+</div>
+
+<div class="create">
+    <textarea class="title" maxlength="20" onfocus="if(value=='请输入标题'){value=''}" onblur="if (value ==''){value='请输入标题'}">请输入标题</textarea>
+    <div class="upload-img">
+        <form id="submit_form" method="post" action="http://demo.qq.com:3000/uploadimg" enctype="multipart/form-data">
+            <a href="javascript:;" class="a-upload">
+                <input type="file" name="upload" id="upload">点击上传图片
+            </a>
+        </form>
+        <div class="showFileName"></div>
+    </div>
+    <textarea class="content" onfocus="if(value=='请输入内容'){value=''}" onblur="if (value ==''){value='请输入内容'}">请输入内容</textarea>
+</div>
+
+<div class="done">提交文章</div>
